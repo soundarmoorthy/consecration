@@ -17,7 +17,7 @@ namespace Consecration.Android
             global::Xamarin.Forms.Forms.Init(this, bundle);
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(false);
             Skor.Controls.Droid.Controls.Init();
-            LoadApplication(new App());
+            LoadApplication(new Consecration.Core.App());
         }
     }
 }
