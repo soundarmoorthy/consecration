@@ -1,9 +1,11 @@
 ﻿using MyTripCountdown.Models;
 using MyTripCountdown.ViewModels.Base;
+
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows.Input;
+
 using Xamarin.Forms;
 
 namespace MyTripCountdown.ViewModels
@@ -12,9 +14,10 @@ namespace MyTripCountdown.ViewModels
     {
         private Trip _trip;
         private Countdown _countdown;
-        private int _days;
         private int _hours;
         private int _minutes;
+        private int _seconds;
+        private bool _enabled;
         private double _progress;
 
         public MyTripCountdownViewModel()
@@ -28,10 +31,10 @@ namespace MyTripCountdown.ViewModels
             set => SetProperty(ref _trip, value);
         }
 
-        public int Days
+        public bool RecordEnabled
         {
-            get => _days;
-            set => SetProperty(ref _days, value);
+            get => _enabled;
+            set => SetProperty(ref _enabled, value);
         }
 
         public int Hours
@@ -44,6 +47,12 @@ namespace MyTripCountdown.ViewModels
         {
             get => _minutes;
             set => SetProperty(ref _minutes, value);
+        }
+
+        public int Seconds
+        {
+            get => _seconds;
+            set => SetProperty(ref _seconds, value);
         }
 
         public double Progress
@@ -77,9 +86,15 @@ namespace MyTripCountdown.ViewModels
 
         void OnCountdownTicked()
         {
-            Days = _countdown.RemainTime.Days;
             Hours = _countdown.RemainTime.Hours;
-            Minutes = _countdown.RemainTime.Minutes;
+            Hours = _countdown.RemainTime.Minutes;
+            Minutes = _countdown.RemainTime.Seconds;
+
+            //Only enable the button during the begining of the hour.
+            if (Minutes == 59 || Minutes == 0 || Minutes == 1 || Minutes == 2)
+                RecordEnabled = true;
+            else
+                RecordEnabled = false;
 
             var totalSeconds = (MyTrip.Date - MyTrip.Creation).TotalSeconds;
             var remainSeconds = _countdown.RemainTime.TotalSeconds;
@@ -88,7 +103,7 @@ namespace MyTripCountdown.ViewModels
 
         void OnCountdownCompleted()
         {
-            Days = 0;
+            Hours = 0;
             Hours = 0;
             Minutes = 0;
 
@@ -97,11 +112,19 @@ namespace MyTripCountdown.ViewModels
 
         void LoadTrip()
         {
+            var nextConsecration = new DateTime
+                (DateTime.Now.Year,
+                DateTime.Now.Month,
+                DateTime.Now.Day,
+                DateTime.Now.Hour + 1,
+                0,
+                0);
+
             var trip = new Trip()
             {
                 Picture = "trip",
-                Date = DateTime.Now + new TimeSpan(1, 2, 42, 15),
-                Creation = DateTime.Now.AddHours(-8)
+                Date = nextConsecration,
+                Creation = DateTime.Now
             };
 
             MyTrip = trip;
