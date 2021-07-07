@@ -10,7 +10,7 @@ namespace Consecration.Core
         {
             InitializeComponent();
 
-            MainPage = new CustomNavigationPage(new MyTripCountdownView());
+            MainPage = new CustomNavigationPage(new ConsecrationView());
         }
     }
 }

@@ -2,9 +2,9 @@
 
 namespace Consecration.Core
 {
-    public partial class MyTripCountdownView : ContentPage
+    public partial class ConsecrationView : ContentPage
     {
-        public MyTripCountdownView()
+        public ConsecrationView()
         {
             InitializeComponent();
 

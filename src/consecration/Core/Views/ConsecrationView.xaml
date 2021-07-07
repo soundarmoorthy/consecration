@@ -2,7 +2,7 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="Consecration.Core.MyTripCountdownView" 
+    x:Class="Consecration.Core.ConsecrationView" 
     xmlns:controls="clr-namespace:Consecration.Core"
     xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
@@ -48,10 +48,6 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <Label
-                Grid.Row="0"
-                Text="Next Consecration"
-                Style="{StaticResource TripTitleStyle}"/>
             <Grid
                 Grid.Row="1">
                 <ffimageloading:CachedImage  
@@ -123,7 +119,7 @@
                         EndColor="{StaticResource ProgressBlueColor}"
                         Command="{Binding RestartCommand}"/>
                     <Label       
-                        Text="Record"  
+                        Text="Consecrate"  
                         FontFamily="{StaticResource SourceSansRegular}"
                         FontSize="{StaticResource FontSize24}" 
                         TextColor="{StaticResource WhiteColor}"
