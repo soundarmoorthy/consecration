@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace MyTripCountdown.ViewModels.Base
+namespace Consecration.Core
 {
     public abstract class BaseViewModel : ExtendedBindableObject
     {
@@ -19,7 +19,7 @@ namespace MyTripCountdown.ViewModels.Base
                 OnPropertyChanged("IsBusy");
             }
         }
-        
+
         public virtual Task LoadAsync()
         {
             return Task.CompletedTask;

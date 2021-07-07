@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MyTripCountdown.Models
+namespace Consecration.Core
 {
     public class Trip
     {

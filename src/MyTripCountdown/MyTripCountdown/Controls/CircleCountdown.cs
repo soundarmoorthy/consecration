@@ -1,9 +1,11 @@
 ﻿using SkiaSharp;
 using SkiaSharp.Views.Forms;
+
 using System;
+
 using Xamarin.Forms;
 
-namespace MyTripCountdown.Controls
+namespace Consecration.Core
 {
     public class CircleCountdown : SKCanvasView
     {
@@ -73,7 +75,7 @@ namespace MyTripCountdown.Controls
 
         private void DrawProgressCircle(SKImageInfo info, SKCanvas canvas)
         {
-            float progressAngle = SweepAngle  * Progress;
+            float progressAngle = SweepAngle * Progress;
             int size = Math.Min(info.Width, info.Height);
 
             var shader = SKShader.CreateSweepGradient(

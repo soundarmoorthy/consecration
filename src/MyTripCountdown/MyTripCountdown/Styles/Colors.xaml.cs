@@ -1,10 +1,10 @@
-﻿namespace MyTripCountdown.Styles
+﻿namespace Consecration.Core
 {
     public partial class Colors
-	{
-		public Colors ()
-		{
-			InitializeComponent ();
-		}
-	}
+    {
+        public Colors()
+        {
+            InitializeComponent();
+        }
+    }
 }

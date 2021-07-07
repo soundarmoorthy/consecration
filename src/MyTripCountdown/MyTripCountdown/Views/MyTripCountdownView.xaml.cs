@@ -1,17 +1,15 @@
-﻿using MyTripCountdown.ViewModels;
-using MyTripCountdown.ViewModels.Base;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
-namespace MyTripCountdown.Views
+namespace Consecration.Core
 {
     public partial class MyTripCountdownView : ContentPage
-	{
-		public MyTripCountdownView ()
-		{
-			InitializeComponent ();
+    {
+        public MyTripCountdownView()
+        {
+            InitializeComponent();
 
             BindingContext = new MyTripCountdownViewModel();
-		}
+        }
 
         protected override async void OnAppearing()
         {

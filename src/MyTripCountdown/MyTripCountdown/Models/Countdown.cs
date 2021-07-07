@@ -1,7 +1,8 @@
 ﻿using System;
+
 using Xamarin.Forms;
 
-namespace MyTripCountdown.Models
+namespace Consecration.Core
 {
     public class Countdown : BindableObject
     {
@@ -40,7 +41,7 @@ namespace MyTripCountdown.Models
                     Completed?.Invoke();
                 }
 
-                return ticked; 
+                return ticked;
             });
         }
     }

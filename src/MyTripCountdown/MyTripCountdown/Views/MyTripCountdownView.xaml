@@ -2,8 +2,8 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="MyTripCountdown.Views.MyTripCountdownView" 
-    xmlns:controls="clr-namespace:MyTripCountdown.Controls"
+    x:Class="Consecration.Core.MyTripCountdownView" 
+    xmlns:controls="clr-namespace:Consecration.Core"
     xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     xmlns:skor="clr-namespace:Skor.Controls;assembly=Skor.Controls"  

@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace MyTripCountdown.Views
+namespace Consecration.Core
 {
     public partial class CustomNavigationPage : NavigationPage
     {

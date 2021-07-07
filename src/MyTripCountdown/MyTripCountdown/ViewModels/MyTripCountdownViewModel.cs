@@ -1,14 +1,11 @@
-﻿using MyTripCountdown.Models;
-using MyTripCountdown.ViewModels.Base;
-
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
 using Xamarin.Forms;
 
-namespace MyTripCountdown.ViewModels
+namespace Consecration.Core
 {
     public class MyTripCountdownViewModel : BaseViewModel
     {
