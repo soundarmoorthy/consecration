@@ -1,4 +1,4 @@
-# My Trip Countdown
+# Credits
 
 My Trip Countdown is a Xamarin.Forms sample to show how to create **goodlooking UI** with Xamarin.Forms. This sample is based on [Countdown timer](https://dribbble.com/shots/3580838-Daily-UI-014-Countdown-timer/) designed by [Victoria Sgarro](https://dribbble.com/victoriasgarro).
 
