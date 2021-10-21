@@ -1,12 +1,8 @@
 # Credits
 
-My Trip Countdown is a Xamarin.Forms sample to show how to create **goodlooking UI** with Xamarin.Forms. This sample is based on [Countdown timer](https://dribbble.com/shots/3580838-Daily-UI-014-Countdown-timer/) designed by [Victoria Sgarro](https://dribbble.com/victoriasgarro).
+Consecration app is a fork and modification of My Trip Countdown is a Xamarin.Forms sample to show how to create **goodlooking UI** with Xamarin.Forms. This sample is based on [Countdown timer](https://dribbble.com/shots/3580838-Daily-UI-014-Countdown-timer/) designed by [Victoria Sgarro](https://dribbble.com/victoriasgarro).
 
-![](images/countdown_timer.png)
-
-***NOTES**: The main objective of the sample is to show the creation of the UI (circular countdown, etc.). This App is NOT a real App.*
-
-## Xamarin.Forms App (My Trip Countdown)
+## Xamarin.Forms App (Consecration App)
 
 **Xamarin.Forms** allows you to build native UIs for iOS, Android, Windows, Linux, macOS and Tizen from a single, shared codebase. This project exercises the following patterns and features:
 
@@ -29,7 +25,7 @@ My Trip Countdown app is available for two platforms:
 
 ## Screens
 
-<img src="images/MyTripCountdown.png" alt="My Trip Countdown" Width="320" />
+<img src="images/MyTripCountdown.png" alt="Consecration" Width="320" />
 
 
 ## Requirements
