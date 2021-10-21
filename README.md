@@ -1,4 +1,6 @@
-# Credits
+## About
+This app is used to remind you hourly to do consecration. It's focussed on getting the user to do the consecration exactly on top of the hour.
+## Credits
 
 Consecration app is a fork and modification of My Trip Countdown is a Xamarin.Forms sample to show how to create **goodlooking UI** with Xamarin.Forms. This sample is based on [Countdown timer](https://dribbble.com/shots/3580838-Daily-UI-014-Countdown-timer/) designed by [Victoria Sgarro](https://dribbble.com/victoriasgarro).
 
